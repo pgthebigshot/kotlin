@@ -1,0 +1,124 @@
+/**
+ * You can edit, run, and share this code. 
+ * play.kotlinlang.org 
+ */
+
+fun main() {
+    
+    
+    //variables
+    
+    var x=5
+    println("Hello, world!!!  ")
+    println("pulkit what's up	$x")
+    
+    //var is mutable i.e later we can change it's value
+    
+    var name:String="Pulkit"
+    println("My name is $name")
+    name="Gupta"
+    println("My name is $name")
+    
+    // val is immutable 
+    
+    val y:Int =10
+    val Name="ajhdvcjdh"
+    println("name is $name $Name ")
+    
+    // for nullify a string is required to mension datatype
+    
+    var my_name:String?=null
+    println("$my_name")
+    
+    //conditions
+    
+    if(my_name==null)
+    println("Yes")
+    
+    var age=21
+    if(age==23)
+    	println("wrong")
+    else
+    	println("correct")
+    
+    //condition can return also
+    
+    val z=if(age==21){
+     	print("z = ")
+        10
+    }
+    else
+    20
+    println(z)
+    
+    //like switch case "when"
+	
+    var str="Pulki"
+    when(str){
+        "Pulkit"->println("awesome")
+        "gupta"->{
+            println("wow")
+        }
+         else->{
+             println("kch bhi")
+        }
+    }
+    
+    //we store the value of "when" which is might be a datatype i.e kotlin.Data
+    
+    val st="Pulkit"
+    val p=when(st){
+        "Pulkit"->print("awesome")
+        "gupta"->{
+            println("wow")
+        }
+         else->{
+             println("kch bhi")
+        }
+    }
+    println(" $p")
+    
+    //arrays has a inbuilt fun of "arrayOf"
+    
+    val kch = arrayOf("kasdgja","casxcdd")
+    println(kch)
+    
+    //loops
+    
+    for(i in kch){
+        println(i)
+    }
+    
+    
+    //search inbuilt functions by .(dot) operator
+    
+    var bhi=kch.sorted()
+    
+    for(i in bhi)
+    	print(i+"	")
+    println()
+    
+    //forEach is takes a string and do as what it is told
+    
+    kch.forEach{
+        println(it)
+    }
+    
+    val num=listOf(1,2,3)
+    for(i in num)
+    print("$i ")
+    println()
+    
+    num[0]=2
+    
+    //num[0]=1 this is not possible as list are initially immutable so..
+    //you have make it mutable by mentioning
+    //also you can specify that it is a particular datatype
+    val nums=mutableListOf<Int>(4,3,2,1)
+    nums[0]=5
+    for(i in nums)
+    print("$i ")
+    println()
+    
+    //fuctions
+}
